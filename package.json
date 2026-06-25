@@ -1,0 +1,25 @@
+{
+  "name": "pure-ast-transformer",
+  "version": "0.8.0",
+  "description": "Java Selenium → Playwright TypeScript transpiler",
+  "type": "module",
+  "main": "dist/cli.js",
+  "bin": {
+    "transform": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "transform": "node dist/cli.js",
+    "lint": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
